@@ -1,11 +1,42 @@
-This is a simple Stopwatch application built using HTML, CSS, and JavaScript.
-The project was created to practice basic web development concepts such as:
+This project is a digital stopwatch built completely using:
 
-DOM manipulation
+HTML (for webpage structure)
 
-Event handling
+CSS (for visual design)
 
-Time functions (setInterval())
+JavaScript (for functionality)
 
-Frontend design with CSS
+The stopwatch can:
+
+Start counting time.
+
+Stop (pause) the count.
+
+Reset back to zero.
+
+It shows time in HH:MM:SS (hours:minutes:seconds) format.
+
+2️⃣ Platform Used
+🔧 Code Editor
+Visual Studio Code (VS Code):
+
+Used to write and edit the code.
+
+Lightweight and powerful code editor with extensions.
+
+Helpful for real-time error highlighting, auto-completion, and better file management.
+
+🔧 Version Control
+Git & GitHub:
+
+Used to store the project code online.
+
+Helps to track changes, collaborate, and host the code publicly.
+
+🔧 Deployment
+GitHub Pages:
+
+Used to host the webpage live.
+
+Easy way to share your project with others by just sharing a link.
 
