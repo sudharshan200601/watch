@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stopwatch</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #10c4d4;
+        }
+        .stopwatch {
+            background: #ff0000;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+        #display {
+            font-size: 48px;
+            margin-bottom: 30px;
+        }
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #ddd;
+        }
+    </style>
+</head>
+<body>
+<div class="stopwatch">
+    <h1>Sudharshan's Stopwatch</h1>
+    <div id="display">00:00:00</div>
+    <button onclick="start()">Start</button>
+    <button onclick="stop()">Stop</button>
+    <button onclick="reset()">Reset</button>
+</div>
+<script>
+    let timer;
+    let seconds = 0;
+    let minutes = 0;
+    let hours = 0;
+    let running = false;
+
+    function start() {
+        if (!running) {
+            running = true;
+            timer = setInterval(updateTime, 1000);
+        }
+    }
+
+    function stop() {
+        running = false;
+        clearInterval(timer);
+    }
+
+    function reset() {
+        running = false;
+        clearInterval(timer);
+        seconds = 0;
+        minutes = 0;
+        hours = 0;
+        document.getElementById('display').innerText = "00:00:00";
+    }
+
+    function updateTime() {
+        seconds++;
+        if (seconds === 60) {
+            seconds = 0;
+            minutes++;
+        }
+        if (minutes === 60) {
+            minutes = 0;
+            hours++;
+        }
+
+        let h = hours < 10 ? "0" + hours : hours;
+        let m = minutes < 10 ? "0" + minutes : minutes;
+        let s = seconds < 10 ? "0" + seconds : seconds;
+
+        document.getElementById('display').innerText = `${h}:${m}:${s}`;
+    }
+</script>
+
+</body>
+</html>
