@@ -1,4 +1,4 @@
-This project is a digital stopwatch built completely using:
+# This project is a digital stopwatch built completely using:
 
 HTML (for webpage structure)
 
@@ -16,8 +16,8 @@ Reset back to zero.
 
 It shows time in HH:MM:SS (hours:minutes:seconds) format.
 
-2️⃣ Platform Used
-🔧 Code Editor
+# Platform Used
+ # Code Editor
 Visual Studio Code (VS Code):
 
 Used to write and edit the code.
@@ -26,14 +26,14 @@ Lightweight and powerful code editor with extensions.
 
 Helpful for real-time error highlighting, auto-completion, and better file management.
 
-🔧 Version Control
+# Version Control
 Git & GitHub:
 
 Used to store the project code online.
 
 Helps to track changes, collaborate, and host the code publicly.
 
-🔧 Deployment
+# Deployment
 GitHub Pages:
 
 Used to host the webpage live.
